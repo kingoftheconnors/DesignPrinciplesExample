@@ -4,16 +4,23 @@ using System.Text;
 
 namespace Sample
 {
+    /// <summary>
+    /// Entity Framework Domain object for a basic material. Defines a material's category and default values true for all instances/models/versions of a material.
+    /// </summary>
     public class Material
     {
-        private Material()
+        protected Material()
         {
         }
 
         public int Id { get; set; }
         public bool Active { get; private set; } = true;
         public string Name { get; private set; }
-        public MaterialCategoryEnum Category { get; private set; }
+        public string ContainerName { get; private set; }
+        public decimal DefaultMarkup { get; private set; }
+        public decimal DefaultLaborRate { get; private set; }
+
+        // Audit columns
         public DateTime CreatedDate { get; private set; }
         public DateTime? UpdatedDate { get; private set; }
         public DateTime? DeletedDate { get; private set; }

@@ -1,5 +1,8 @@
 ﻿namespace Sample
 {
+    /// <summary>
+    /// Basic info data row for rows replaced by a LineItem. These items are used as a list in the LineItem definition
+    /// </summary>
     public class ReplacedLineItem
     {
         public ReplacedLineItem(int optionItemId, int lineItemId)

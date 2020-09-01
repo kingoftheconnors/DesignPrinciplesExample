@@ -4,16 +4,6 @@ using System.Text;
 
 namespace Sample
 {
-    public enum LineItemStatusEnum
-    {
-        Error = 0,
-        Normal = 1,
-        Replaced = 2,
-        OptionItem = 3,
-        AcceptedOptionItem = 4,
-        RejectedOptionItem = 5
-    }
-
     public enum LineItemCategoryEnum
     {
         Error = 0,
@@ -21,18 +11,6 @@ namespace Sample
         Removal = 2,
         Fee = 3,
         SystemManaged = 4
-    }
-
-    public enum MaterialCategoryEnum
-    {
-        NotApplicable = 0,
-        Foam = 1,
-        Fiberglass = 2,
-        Atticblow = 3,
-        Paint = 4,
-        Accessory = 5,
-        Removal = 30,
-        Fee = 40
     }
 
     public enum RValueEnum

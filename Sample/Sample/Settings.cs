@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Sample
 {
+    /// <summary>
+    /// Globally available Singleton settings manager
+    /// </summary>
     public class Settings
     {
         private Settings()
